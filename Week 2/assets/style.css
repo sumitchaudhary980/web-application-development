@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #fdfbf7;
+    --primary-color: #2c4a3e;
+    --accent-color: #c2956e;
+    --text-dark: #1b2620;
+    --text-light: #f4f1ea;
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    font-size: 16px;
+    font-family: var(--font-main);
+    line-height: 1.6;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--background);
+    color: var(--text-dark);
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    letter-spacing: -0.5px;
+}
+
+h1:first-of-type {
+    margin-top: 0;
+}
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.child {
+    flex: 1 1 250px;
+    max-width: 320px;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    font-size: 1rem;
+    transition: transform 0.2s ease;
+}
+
+.child:hover {
+    transform: translateY(-4px);
+}
+
+.child span {
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    text-decoration: underline;
+    color: #e6dfd3;
+}
+
+p {
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
